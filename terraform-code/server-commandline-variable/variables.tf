@@ -1,4 +1,4 @@
 variable "ami" {}
-variable "hardware" {}
+variable "instancetype" {}
 variable "keyname" {}
 variable "region" {}
