@@ -1,8 +1,8 @@
 resource "aws_instance" "web-server" {
-  ami           = "var.ami"
-  instance_type = var.hardware
+  ami           = var.ami
+  instance_type = var.instancetype
   key_name      = var.keyname
   tags = {
-    Name = "This server by terraform code"
+    Name = "terraform-server-created"
   }
 }
